@@ -1,0 +1,27 @@
+
+/* *{
+   margin: 0;
+    padding: 0;
+} */
+body{
+    margin: 0;
+    text-align: center;
+    padding: 0;
+}
+.top-container{
+    background: blue;
+    overflow: hidden;
+}
+.heading{
+    width: 800px;
+    margin: 0 auto;
+}
+h1 .top{
+    padding: 0px;
+    margin: 0px;
+}
+.mid-container{
+    background: navy;
+    overflow: hidden;
+    color: antiquewhite;
+}

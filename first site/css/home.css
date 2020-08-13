@@ -1,7 +1,9 @@
 body{
-    padding: 50px;
+    padding: 0px;
+    margin: 0;
     /* line-height: 1cm; */
     /* user-select: none; */
+    position: relative;
 }
 hr{
     /* border-style: none; */
@@ -12,14 +14,19 @@ hr{
 }
 .navbar{
     /* background: linear-gradient(to right,rgb(221, 218, 23),white,white 80%); */
+    text-align: center;
+    background:rgba(150, 0, 0, .2);
+    margin: 0;
 }
 .empty{
     background: black;
     height: 20px;
+    
 }
 .empty:hover{
     height: 20px;
     background: red;
+    box-shadow:  0px 10px 20px,0px -10px 20px,10px 0px 20px,-10px 0px 20px;
 }
 #bn{
     color: brown;
@@ -27,6 +34,7 @@ hr{
 /* unvisited link */
 a:link{
 color: red;
+text-decoration: none;
 }
 /* visited link */
 a:visited{
@@ -34,13 +42,14 @@ color: red;
 }
 a:hover{
     color: green;
+    text-decoration: underline;
 }
 a:active{
     color: yellow;
 }
 *:focus{
     font-size:larger;
-    font-size: xx-large;
+    /* font-size: xx-large; */
     /* outline: dotted; */
 }
 ::selection{
@@ -49,4 +58,64 @@ a:active{
 }
 img::selection{
     background: rgba(0, 0, 0, .2);
+}
+.zxc{
+    display: inline;
+    padding:20px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+footer{
+    position: relative;
+    top: 10px;
+    /* clear: both; */
+
+}
+footer a{
+    display: inline-block;
+    background: cyan;
+    padding: 10px;
+    /* border: 5px salmon solid; */
+    width: 100px;
+    text-align: center;
+    margin: 0 30px;
+    margin-inline-start: 0;
+}
+.side-nav{
+    height: 1000px;
+    display: inline-block;
+    background-color: aqua;
+    position: relative;
+    /* width: 30%; */
+    /* left:0; */
+    /* float: left; */
+    /* overflow: hidden; */
+    clear: both;
+}
+.side-nav a{
+    display: block;
+}
+.main{
+    height: 1000px;
+    display:inline-block;
+    /* background-color: cadetblue; */
+    position: absolute;
+    /* width: 70%; */
+    /* left: 450px; */   
+    overflow: scroll;
+float: left;
+/* clear: both; */
+}
+.fixed{
+    position: fixed;
+    right: 10px;
+    bottom: 50px;
+    background: rgba(0, 255, 0, .2);
+    font-size: 20pt     ;
+}
+header{
+    margin: 0;
+    position: sticky;
+    top:0;
+    z-index: 100;
 }
