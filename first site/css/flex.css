@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    text-align: center;
+}
+footer{
+    text-align: center;
+    background: red;
+  position: relative;
+  height: 100px;
+  clear: both;
+  
+}
+footer p{
+    /* vertical-align: middle; */
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+a:link{
+    color: white;
+}
+footer p a:visited{
+    color: white;
+}
+header{
+    margin: 0;
+    padding:0 ;
+    height: 100px;
+    background: blue;
+    text-align: center;
+    overflow: hidden;
+}
+header p{
+    margin: 0;
+}
+.flex{
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap:wrap ;
+    /* height: 200px; */
+    width: 100%;
+}
+.a{
+    height: 100px;
+    background: olive;
+   flex-basis: 100px;
+   flex-grow: 1;
+   flex-shrink: 0;
+}
+.b{
+    height: 100px;
+    background: orange;
+    flex-basis: 100px;
+    flex-grow: 1;
+    flex-shrink: 0;
+   
+}
+.c{
+    height: 100px;
+    background:plum;
+    flex-basis: 100px;
+    flex-grow: 1;
+    flex-shrink: 0;
+   
+}
+.flex1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap ;
+    /* height: 200px; */
+    width: 100%;
+    justify-content: space-around;
+    padding: 100px 0;
+}
+.d{
+    height: 100px;
+    width: 100px;
+    background: rebeccapurple;
+}

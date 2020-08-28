@@ -3,25 +3,100 @@
    margin: 0;
     padding: 0;
 } */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 body{
     margin: 0;
-    text-align: center;
+    /* text-align: center; */
     padding: 0;
+    text-align: center;
 }
 .top-container{
     background: blue;
     overflow: hidden;
 }
 .heading{
-    width: 800px;
+    /* width: 800px; */
     margin: 0 auto;
+    text-align: center;
 }
-h1 .top{
+h1,h2{
+    font-family: 'Dancing Script', cursive;
+}
+/* h1 .top{
     padding: 0px;
     margin: 0px;
-}
+} */
 .mid-container{
-    background: navy;
+    min-height: 200px;
     overflow: hidden;
-    color: antiquewhite;
+    text-align: center;
+    background: url(../images/joanna-kosinska-unsplash.jpg);
+    background-size: cover;
+    background-position: right top;
+    /* color: blue; */
+}
+.projects{
+    background: greenyellow;
+    min-height: 100px;
+    overflow: hidden;
+}
+footer{
+    background: gray;
+    min-height: 100px;
+    overflow: hidden;
+}
+.heading .a{
+    font-family:none;
+}
+.contacts{
+    list-style-type: none;
+    padding: 0;
+}
+.contacts>li{
+    display: inline-block;
+    padding:0 2% 0 2%;
+}
+
+a:hover,a:link,a:visited{
+    text-decoration: none;
+    color: yellowgreen;
+}
+.education{
+    font-family:none;
+    text-align: left;
+    margin-left: 20px;
+    line-height: 5px;
+}
+header {
+    background:black;
+    
+    overflow: hidden;
+    display: flex;
+    /* justify-content:flex-start; */
+}
+header a:hover,header a:link,header a:visited{
+    text-decoration: none;
+    color: beige;
+}
+header a{
+    display: inline-block;
+    background: blueviolet;
+    padding: 10px;
+    border-right: 5px solid black;
+    /* margin:0 10px; */
+    width: 100px;
+}
+
+@media screen and (max-width:600px){
+   header{
+    background:black;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    /* justify-items: start; */
+    text-align:left ;
+   }
+   header a{
+    width: 100%;
+}
 }

@@ -17,6 +17,7 @@ hr{
     text-align: center;
     background:rgba(150, 0, 0, .2);
     margin: 0;
+    padding: 0;
 }
 .empty{
     background: black;
@@ -67,7 +68,9 @@ img::selection{
 }
 footer{
     position: relative;
+    display: flex;
     top: 10px;
+    justify-content: space-evenly;
     /* clear: both; */
 
 }
